@@ -27,16 +27,8 @@ void Array() {
 
 }
 
-void Array2() {
-
-    int c, i, n;
-    n = 0;
-
-}
-
 int main() {
 
-    //Array();
-    Array2();
+    Array();
     return 0;
 }
