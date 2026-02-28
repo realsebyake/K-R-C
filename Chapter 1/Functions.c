@@ -23,6 +23,7 @@ int power(int base, int n) {
     return p;
 }
 
+// next 2 functions are for exercise 1-15
 int conversionFunction(int fahr) {
 
     return 5 * (fahr - 32) / 9;
@@ -42,7 +43,7 @@ int conversionExercise() {
 
 int main() {
 //  krMain();
-    conversionExercise();
+//  conversionExercise();
     return 0;
 }
 
