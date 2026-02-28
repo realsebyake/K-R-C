@@ -1,9 +1,6 @@
-// This is from 1.5.#
+// 1.5 Character Input and Output
 
 #include <stdio.h>
-
-    #define IN 1   // defines are needed for unix word counting and ex 1-12
-    #define OUT 0 
 
 void krExample() {
 
@@ -107,6 +104,9 @@ void fifthExercise() {
 
 // Based on a UNIX program, also press CTRL+D after you wrote the few input lines in terminal
 void krWordCounting() {
+
+    #define IN 1
+    #define OUT 0 
 
     int c, nl, nw, nc, state;
 

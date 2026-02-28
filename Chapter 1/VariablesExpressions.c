@@ -1,3 +1,5 @@
+// 1.2 Variables and Arithmetic Expressions
+
 #include <stdio.h>
 
 // Integer based calculation (More general)
