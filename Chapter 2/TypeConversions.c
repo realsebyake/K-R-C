@@ -5,10 +5,12 @@ int htoi(char s[]) {
     int result = 0;
     int i = 0;
 
+        if (s[0] == '0' && (s[1] == 'x' || s[1] == 'X'))
+            i = 2;
+
         while (s[i] != '\0') {
             char c = s[i];
-            int value;
-    
+                int value;
             if (c >= '0' && c <= '9') {
                 value = c - '0';
             } else if (c >= 'A' && c <= 'F') {
@@ -16,12 +18,12 @@ int htoi(char s[]) {
             } else if (c >= 'a' && c <= 'f') {
                 value = c - 'a' + 10;
             } else {
-                // Invalid character for hexadecimal
                 break;
             }
     
             result = result * 16 + value;
             i++;
+            
         }
 
 return result;
