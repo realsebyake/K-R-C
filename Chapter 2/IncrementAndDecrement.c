@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 // example found in book which is "used" by ex 2-4
 void squeeze(char s1[], int c) {
 
