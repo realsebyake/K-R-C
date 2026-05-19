@@ -19,7 +19,7 @@ int binsearch(int x, int v[], int n) { // example provided by K&R
     return -1; /* no match */
 }
 
-int binsearchCompact(int x, int v[], int n) {
+int binsearchCompact(int x, int v[], int n) { // Ex 3-2
     int low, high, mid;
 
     low = 0;
