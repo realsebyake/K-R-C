@@ -39,7 +39,7 @@ void  itob(int n, char s[], int b) {
     i = 0;
 
     do {
-        int digit = (n < 0 ? -(n % b) : n % b);
+        int digit = (n < 0 ? -(n % b) : n % b); // b is for user specified bases
         s[i++] = digit + (digit < 10 ? '0' : 'a' - 10);
     } while ((n /= b) != 0 );
     if (sign < 0)
@@ -71,7 +71,7 @@ void paddedItoa(int n, char s[], int p) {
 
 int main() {
 
-    char s[100];
+    char s[100]; // modify if set integers/paddings extend beyond 100
 
 itoa(123, s);
 printf("ITOA for n = 123: %s\n", s);
