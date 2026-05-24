@@ -1,7 +1,10 @@
 #include <stdio.h>
 #include <string.h>
 
+// This file includes exercises 3: 4-6. Really good piece of practice code not gonna lie
+
 void reverse(char s[]) {
+
     int i, j;
     char temp;
     
