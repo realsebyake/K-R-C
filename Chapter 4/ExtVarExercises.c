@@ -144,7 +144,7 @@ double pop(void) {
     }
 }
 
-int getop(char s[]) {
+/* int getop(char s[]) { // Commented out due to 4-11
     
     int i, c, next, neg;
     neg = 0;
@@ -197,6 +197,30 @@ int getop(char s[]) {
     s[i] = '\0';
     if (c != EOF)
         linep--;
+    return NUMBER;
+} */
+
+int getop(char s[]) {
+
+    int i, c;
+    static int leftover = 0;
+
+    while ((s[0] = c = (leftover ? leftover : getchar())) == ' ' || c == '\t')
+        leftover = 0;
+    leftover = 0;
+    s[1] = '\0';
+    if (!isdigit(c) && c != '.')
+        return c;
+    i = 0;
+    s[i++] = c;
+    if (isdigit(c))
+        while (isdigit(s[i++] = c = getchar()))
+            ;
+    if (s[i] == '.')
+        i++;
+    s[i] = '\0';
+    if (c != EOF)
+        leftover = c;
     return NUMBER;
 }
 
